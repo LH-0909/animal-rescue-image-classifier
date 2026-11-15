@@ -20,3 +20,11 @@
 
 GitHub Pages 展示界面与示例数据；模型推理、登录、上传、训练和保存需要本地 Flask/PyTorch 服务。
 
+
+## 恢复已训练模型和数据集
+
+1. 从 [v1.0.0 发布页](https://github.com/LH-0909/animal-rescue-image-classifier/releases/tag/v1.0.0) 下载“实验恢复包.zip”。
+2. 将压缩包解压到项目根目录，确保 `data/platform.db`、`data/images/` 和两个 `.pt` 文件位于项目目录下的 `data/` 内。恢复前请备份现有 `data/`，避免覆盖自己的数据。
+3. 安装依赖并运行 `python app.py`。打开页面并注册本地账户，即可使用恢复的训练数据、模型和实验记录。
+
+恢复包包含数据集图像、数据划分、模型权重与配置、训练曲线及评估记录；不包含账户密码、会话密钥或小组分工。完整 CIFAR-10 原始档案也在发布页提供。
